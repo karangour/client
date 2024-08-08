@@ -2,7 +2,7 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://karangour.github.io/Bicycle-Image-Text-Creator",
+  "homepage": "https://karangour.github.io/client",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
