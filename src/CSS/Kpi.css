@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.kpi-container {
+  width: 79%;
+}
+
+.kpi-main-description {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.kpi-main-description-p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  width: 90%;
+}
+
+.kpi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.kpi-icon {
+  width: 100px;
+  height: fit-content;
+}
+
+.kpi-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  width: 100px;
+  height: 120px;
+  background: #5876ae;
+  border: 2px solid #45a6ff;
+  border-right: 0px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.kpi-text {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 120px;
+  padding: 10px;
+  padding-bottom: 20px;
+  background-color: #103f76;
+  border: 2px solid #45a6ff;
+  border-radius: 0px 10px 10px 0px;
+  border-left: 0px;
+}
+
+.kpi-title-container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  width: 1000px;
+  margin-bottom: -20px;
+  margin-top: 10px;
+}
+
+.check-box-title-container {
+  display: flex;
+}
+
+.check-box {
+  width: 40px;
+  height: fit-content;
+  margin-top: -7px;
+  margin-right: 20px;
+}
+
+.kpi-title {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.edit-icon {
+  width: 20px;
+  height: fit-content;
+}
+
+.kpi-description {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-left: 10px;
+}

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.graphs-container {
+  z-index: 1;
+  width: 79%;
+  /* border: 5px solid darkgreen; */
+}
+
+.graphs-description {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  font-size: 1rem;
+}
+
+.graph-box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.graph-row {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  /* border: 1px solid green; */
+  margin-top: 0px;
+}
+
+.graph-image {
+  margin: 10px;
+  width: 48%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}

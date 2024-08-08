@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grey {
+  color: grey;
+}
+
+.slides-container {
+  display: flex;
+  flex-direction: column;
+  background: #181b23;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 15px;
+  width: 400px;
+  padding: 2px;
+  max-width: 100%;
+  margin: 10px;
+  z-index: 1;
+  margin-top: 30px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.slides-title {
+  font-weight: 450;
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-right: 3rem;
+  width: 100%;
+  /* border: 1px solid yellowgreen; */
+}
+
+.slides-line-1 {
+  display: flex;
+  padding: 1rem 0.2rem 0.6rem 1.2rem;
+  width: 94%;
+  /* border: 1px solid red; */
+}
+
+.slides-line-2 {
+  line-height: 1.4rem;
+  margin-left: 4rem;
+  margin-bottom: 0.6rem;
+  width: 78%;
+  /* border: 1px solid green; */
+}
+
+.supplier-lines {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* border: 1px solid blue; */
+}
+
+.supply-amount {
+  display: flex;
+  width: 60px;
+  justify-content: space-between;
+}
+
+.down-arrow {
+  width: auto;
+  height: 10px;
+  margin-top: 5px;
+}
+
+.impact {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.slides-logo {
+  width: 30px;
+  height: 27px;
+  background-color: #2d323d;
+  padding: 3px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 8px;
+}
+
+.line {
+  width: 310px;
+  border: 1px solid #3c414d;
+  margin-left: 4rem;
+  margin-bottom: 0.6rem;
+}
+
+.app-logo {
+  font-size: 0.5rem;
+  color: black;
+  background: #d9d9d9;
+  height: 0.6rem;
+  width: 1.2rem;
+  text-align: center;
+  border-radius: 3px;
+  /* margin-left: 8px; */
+}
+
+.time {
+  font-size: 0.5rem;
+  color: #3c414d;
+  margin-left: 10px;
+}
+
+.slides-line-3 {
+  width: fit-content;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+.cause-summary-title {
+  line-height: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.cause-summary-body {
+  line-height: 1.1rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  width: 300px;
+  text-align: justify;
+}

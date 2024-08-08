@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #21252f;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.bicycle-logo {
+  height: 2em;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-left: -260px;
+  line-height: 2rem;
+}
+
+.form-container div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.linkedin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* border: 1px solid red; */
+  line-height: 1.7rem;
+}
+
+.labels {
+  margin-right: 1rem;
+}
+
+.linkedin-example {
+  background-color: #3ac672;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 1rem;
+  color: black;
+}
+
+.inputs {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.submit-button {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #f8485d;
+  font-weight: 200;
+  width: 253px;
+  height: 2.5rem;
+  border-radius: 8px;
+}
