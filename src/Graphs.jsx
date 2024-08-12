@@ -1,24 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import graph_1 from "./assets/graph1.png";
 import graph_2 from "./assets/graph2.png";
 import graph_3 from "./assets/graph3.png";
 import "./CSS/Graphs.css";
 
 export default function Graphs({ userData }) {
-  const { orgName, orgType, userPosition } = userData;
+  const { orgName, orgType, area } = userData;
+  let copilotType = "";
+  let graphCopilot = "";
+
+  console.log('Inside GRAPHS to see what is userData.orgType:', orgType)
 
   // We call bicycle's backend using the userData - orgName, orgType, userPosition to retrieve the appropriate copilot along with descriptions and store it in 'graphsBackend'. In this example, we're hard-coding it.//
 
-  const graphsBackend = {
-    copilotType: "orders",
+  let graphsBackend = {
+    copilotType: copilotType,
     description:
       "Bicycle’s AI is looking at drops and spikes in orders among others, so that you don’t have to constantly look at dashboards, especially when there are hundreds of products stocked at hundreds of warehouses.",
-
-    // Since these are graphs, we will need to plot it on some sort of template format which felt beyond the scope of this POC. The numbers to plot will also be stored here, under 'graphData'. In this example, we've used the screenshots of the graphs for display purposes.//
-
     graphData: [
       {
-        title: "Spike in Customer Acquisitio nNumber",
+        title: "Spike in Customer Acquisition Number",
         spikeOrDrop: "spike",
         spikeDropValue: "127.67",
         percentageUpOrDown: "471",
@@ -65,16 +66,40 @@ export default function Graphs({ userData }) {
           // x and y axis data for plotting the graph
         },
       },
-    ],
-  };
+    ]
+
+  }
+
+  switch (orgType) {
+    case "Retail":
+      graphsBackend.copilotType = "orders";
+      graphsBackend.description =
+        `Bicycle’s AI is looking at drops and spikes in orders among others, so that you don’t have to constantly look at dashboards, especially when there are hundreds of products stocked at hundreds of warehouses in ${area}.`;
+      break;
+    case "Fintech":
+      graphsBackend.copilotType = "customer acquisitions";
+      graphsBackend.description =
+        `Bicycle’s AI is monitoring customer acquisition rates in ${area}, ensuring that you can optimize your marketing and sales strategies without needing to continuously analyze data.`;
+      break;
+    case "Banking":
+      graphsBackend.copilotType = "total loans";
+      graphsBackend.description =
+        `Bicycle’s AI is keeping track of total loans in ${area}, so you can focus on managing loan portfolios and ensuring financial stability without constantly reviewing loan data.`;
+      break;
+    default:
+      graphsBackend.copilotType = "null";
+      graphsBackend.description =
+        "NULL";
+      break;
+  }
+
+  graphCopilot = `This copilot focuses on ${graphsBackend.copilotType}, which has been set up with data collected from a similar organization as ${orgName}.`
 
   return (
     <div className="graphs-container">
       <h4 className="graphs-description">
-        Bicycle has automatically recommended this copilot based on your
-        organization, {orgName}, and your current position at {orgName},{" "}
-        <i>{userPosition}</i>. This copilot focusses on orders, which has been
-        setup with data collected from a similar organization as {orgName}.
+        Bicycle has automatically recommended this copilot based on {orgName}, and its operations in {area}.{" "}
+        {graphCopilot}
         <br /> <br />
         {graphsBackend.description}
       </h4>

@@ -5,6 +5,9 @@ import down_arrow from "./assets/down-arrow.png";
 import up_arrow from "./assets/up-arrow.png";
 
 export default function Slides({ report }) {
+
+  console.log('Inside Slides with report:', report);
+
   return (
     <div className="slides-container">
       <div className="slides-line-1">
@@ -57,7 +60,7 @@ export default function Slides({ report }) {
         })}
       </div>
 
-      <hr className="line" />
+      <hr className="line" /> 
 
       <div className="slides-line-3 impact">
         <h4 className="cause-summary-title">Cause Summary</h4>
