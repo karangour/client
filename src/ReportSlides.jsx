@@ -38,6 +38,7 @@ export default function ReportSlides({ userData }) {
       case "Retail":
         newSlides1Data = [
           {
+            orgName: userData.orgName,
             title: {
               percentage: "12",
               riseOrDrop: "drop",
@@ -54,6 +55,7 @@ export default function ReportSlides({ userData }) {
               "The analysis indicates that the most pronounced decreases were in web orders involving Canadian suppliers in combination with Paypal payment method.",
           },
           {
+            orgName: userData.orgName,
             title: {
               percentage: "25",
               riseOrDrop: "rise",
@@ -70,6 +72,7 @@ export default function ReportSlides({ userData }) {
               "The analysis indicates that the most pronounced increases were in web orders involving the Apple Pay payment method in combination with Omez's upgraded transport system.",
           },
           {
+            orgName: userData.orgName,
             title: {
               percentage: "18",
               riseOrDrop: "drop",
@@ -91,6 +94,7 @@ export default function ReportSlides({ userData }) {
       case "Fintech":
         newSlides1Data = [
           {
+            orgName: userData.orgName,
             title: {
               percentage: "15",
               riseOrDrop: "rise",
@@ -107,6 +111,7 @@ export default function ReportSlides({ userData }) {
               "The analysis indicates that the most pronounced increases were in customer acquisitions through mobile apps, particularly via Robinhood and Acorns platforms.",
           },
           {
+            orgName: userData.orgName,
             title: {
               percentage: "10",
               riseOrDrop: "drop",
@@ -123,6 +128,7 @@ export default function ReportSlides({ userData }) {
               "The analysis indicates that the most pronounced decreases were in transactions through web platforms, particularly involving TransferWise and Revolut.",
           },
           {
+            orgName: userData.orgName,
             title: {
               percentage: "20",
               riseOrDrop: "rise",
@@ -144,6 +150,7 @@ export default function ReportSlides({ userData }) {
       case "Banking":
         newSlides1Data = [
           {
+            orgName: userData.orgName,
             title: {
               percentage: "22",
               riseOrDrop: "rise",
@@ -160,6 +167,7 @@ export default function ReportSlides({ userData }) {
               "The analysis indicates that the most pronounced increases were in total loans issued through branches, particularly personal and mortgage loans.",
           },
           {
+            orgName: userData.orgName,
             title: {
               percentage: "8",
               riseOrDrop: "drop",
@@ -176,6 +184,7 @@ export default function ReportSlides({ userData }) {
               "The analysis indicates that the most pronounced decreases were in deposit accounts opened via online banking, particularly savings and checking accounts.",
           },
           {
+            orgName: userData.orgName,
             title: {
               percentage: "17",
               riseOrDrop: "rise",
@@ -199,7 +208,6 @@ export default function ReportSlides({ userData }) {
         break;
     }
 
-    console.log('slides1Data before rendering:', newSlides1Data);
     setSlides1Data(newSlides1Data);
   }, [userData.orgType, selectedCities]);
 

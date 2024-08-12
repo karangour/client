@@ -10,6 +10,7 @@ export default function Slides({ report }) {
 
   return (
     <div className="slides-container">
+      <div className="org-title">{report.orgName}</div>
       <div className="slides-line-1">
         <img src={bicycle_crop} className="slides-logo" />
         <h3 className="slides-title">

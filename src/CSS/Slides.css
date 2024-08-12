@@ -24,6 +24,19 @@
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
+.org-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
+  align-self: center;
+  margin-top: -2px;
+  border-radius: 5px;
+  background: #f8485d;
+  /* Optional: add padding to see the gradient better */
+  padding: 8px 8px 2px 8px;
+}
+
 .slides-title {
   font-weight: 450;
   font-size: 1rem;
