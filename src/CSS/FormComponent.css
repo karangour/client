@@ -143,3 +143,143 @@
   font-weight: 450;
   background-color: #3ac672;
 }
+
+/* -------------------------------------------------- */
+
+@media (max-width: 430px) {
+  .form-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #21252f;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .bicycle-logo {
+    height: 2em;
+    margin-bottom: 20px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-left: 0px;
+    line-height: 1.5rem;
+    /* border: 1px solid red; */
+  }
+
+  .form-container div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    /* border: 1px solid green; */
+  }
+
+  .custom-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #3ac672;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  .custom-container div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    justify-content: end;
+
+    /* border: 1px solid green; */
+  }
+
+  .orgName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+  }
+
+  .labels {
+    margin-right: 1rem;
+  }
+
+  .inputs {
+    font-size: 1.2rem;
+    margin-left: 0rem;
+    border-radius: 8px;
+  }
+
+  .orgName-input {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    border-radius: 8px;
+  }
+
+  .type-input {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    border-radius: 8px;
+    width: 205px;
+    text-align: center;
+  }
+
+  .type-select {
+    color: red;
+  }
+
+  .area-input {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    border-radius: 8px;
+  }
+
+  .submit-button {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #f8485d;
+    font-weight: 200;
+    width: 100%;
+    height: 2rem;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  .customisation-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: #3ac672;
+  }
+}

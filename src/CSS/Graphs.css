@@ -43,3 +43,55 @@
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
+
+/* -------------------------------------------------- */
+
+@media (max-width: 430px) {
+  .graphs-container {
+    z-index: 1;
+    width: 100%;
+    /* border: 5px solid darkgreen; */
+  }
+
+  .graphs-description {
+    margin: 0;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-top: 20px;
+    width: 90%;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    /* border: 1px solid red; */
+  }
+
+  .graph-box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+  }
+
+  .graph-row {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    /* border: 1px solid green; */
+    margin-top: 0px;
+  }
+
+  .graph-image {
+    margin: 0;
+    align-self: center;
+    margin-bottom: 15px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  }
+}

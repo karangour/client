@@ -103,3 +103,125 @@
   margin-top: 30px;
   margin-left: 10px;
 }
+
+/* --------------------------------------------------- */
+
+@media (max-width: 430px) {
+  .kpi-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 20px;
+    /* border: 1px solid green; */
+  }
+
+  .kpi-main-description {
+    margin: 0;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+    padding-left: 40px;
+    /* border: 1px solid red; */
+  }
+
+  .kpi-main-description-p {
+    margin: 0;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 350;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 0.7rem;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 10px;
+    width: 90%;
+    /* border: 1px solid blue; */
+  }
+
+  .kpi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .kpi-icon {
+    width: 50px;
+    height: auto;
+  }
+
+  .kpi-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+    width: 70px;
+    height: 90px;
+    background: #5876ae;
+    border: 1px solid #45a6ff;
+    border-right: 0px;
+    border-radius: 3px 0px 0px 3px;
+  }
+
+  .kpi-text {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 90px;
+    padding: 2px;
+    padding-bottom: 20px;
+    background-color: #103f76;
+    border: 1px solid #45a6ff;
+    border-radius: 0px 3px 3px 0px;
+    border-left: 0px;
+  }
+
+  .kpi-title-container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    width: 300px;
+    margin-bottom: -20px;
+    margin-top: 5px;
+  }
+
+  .check-box-title-container {
+    display: flex;
+  }
+
+  .check-box {
+    width: 30px;
+    height: 30px;
+    margin-top: -6px;
+    margin-right: 10px;
+  }
+
+  .kpi-title {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    height: fit-content;
+  }
+
+  .edit-icon {
+    width: 15px;
+    height: 15px;
+    /* border: 1px solid red; */
+  }
+
+  .kpi-description {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 0px 10px 0px 40px;
+    width: 100%;
+    text-align: justify;
+  }
+}

@@ -41,7 +41,7 @@ const CustomPage = () => {
         </h1>
         <h3 className="sub-title">
           This is a page customized for{" "}
-          <span className="green">{userData.orgName}</span>'s needs, placing you
+          <span className="green">{userData.orgName}'s</span> needs, placing you
           in the pilot's seat of Bicycle's AI.
         </h3>
 
